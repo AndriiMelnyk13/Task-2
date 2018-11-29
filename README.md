@@ -4,11 +4,14 @@
 public class Main {
     public static void main(String[] args) {
         int res = 1;
-        int n = 5;
-        for (int i = 1; i<=n;i++ ){
+        int n;
+        for (int i = 1; ; i++) {
             res = res * i;
+//            Введіть значення res
+            if (res == 6) {
+                System.out.println(i);
+            }
 
-            System.out.println(res);
         }
     }
 }
